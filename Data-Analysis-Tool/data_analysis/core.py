@@ -17,3 +17,20 @@ from sklearn.preprocessing import (
 )
 
 from scipy.stats import chi2_contingency
+
+class PlottingMethods:
+    def plot_histogram(self, x, data):
+        fig = px.histogram(data, x=x)
+        fig.show()
+
+    def plot_bar_chart(self, x, y, data):
+        fig = px.bar(data, x=x, y=y)
+        fig.show()
+
+    def plot_pie_chart(self, names, values, data):
+        fig = px.pie(
+            data,
+            names=names,
+            values=values
+        )
+        fig.show()
