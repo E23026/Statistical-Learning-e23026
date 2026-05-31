@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "data_analysis_tool"
+version = "1.0.0"
+description = "Modular Data Sanitization and Exploration Engine"
+
+dependencies = [
+    "pandas",
+    "numpy",
+    "plotly",
+    "scikit-learn",
+    "scipy"
+]
