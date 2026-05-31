@@ -73,7 +73,7 @@ Data-Analysis-Tool/
 Install directly from GitHub:
 
 ```bash
-pip install git+https://github.com/E23026/data-analysis-tool.git
+!pip install "git+https://github.com/E23026/Statistical-Learning-e23026.git#subdirectory=Data-Analysis-Tool"
 ```
 
 ---
