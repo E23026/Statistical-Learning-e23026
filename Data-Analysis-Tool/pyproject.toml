@@ -22,7 +22,7 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/E23026/data-analysis-tool"
+Repository = "https://github.com/E23026/Statistical-Learning-e23026/Data-Analysis-Tool"
 
 [tool.setuptools]
 packages = ["data_analysis"]
