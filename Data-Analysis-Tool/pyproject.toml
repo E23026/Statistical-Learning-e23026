@@ -1,16 +1,28 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "data_analysis_tool"
+name = "data-analysis-tool"
 version = "1.0.0"
-description = "Modular Data Sanitization and Exploration Engine"
+description = "Data Sanitization and Exploration Engine"
+readme = "README.md"
+requires-python = ">=3.9"
+
+authors = [
+    { name = "E23026" }
+]
 
 dependencies = [
-    "pandas",
-    "numpy",
-    "plotly",
-    "scikit-learn",
-    "scipy"
+    "numpy>=1.21",
+    "pandas>=2.0",
+    "plotly>=5.0",
+    "scikit-learn>=1.0",
+    "scipy>=1.10"
 ]
+
+[project.urls]
+Repository = "https://github.com/E23026/data-analysis-tool"
+
+[tool.setuptools]
+packages = ["data_analysis"]
