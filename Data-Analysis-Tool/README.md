@@ -178,5 +178,5 @@ This package can be used for:
 E23026
 
 GitHub Repository:
-https://github.com/E23026/Statistical-Learning-e23026/Data-Analysis-Tool
+https://github.com/E23026/Statistical-Learning-e23026/tree/main/Data-Analysis-Tool
 
