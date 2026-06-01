@@ -512,15 +512,36 @@ class DataInspector:
     # Unified Heatmap
     # -------------------------------------------------
 
-    def plot_all_associations_heatmap(self):
+    def plot_all_associations_heatmap(
+        self,
+        max_columns=15
+    ):
 
         final_df = self.create_normalized_data_df()
 
-        corr = final_df.corr()
+        corr = final_df.corr().abs()
 
+        column_scores = corr.sum()
+
+        selected_columns = (
+            column_scores
+            .sort_values(ascending=False)
+            .head(max_columns)
+            .index
+        )
+    
+        corr = final_df[selected_columns].corr()
+    
         fig = px.imshow(
             corr,
+            text_auto=".2f",
+            aspect="auto",
             title="Association Heatmap"
         )
-
+    
+        fig.update_layout(
+            width=900,
+            height=900
+        )
+    
         fig.show()
